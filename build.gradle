@@ -57,7 +57,10 @@ dependencies {
 	// mod menu
 	modCompileOnly "com.terraformersmc:modmenu:${mod_menu_version}"
 	modRuntimeOnly "com.terraformersmc:modmenu:${mod_menu_version}"
-
+	// CCA
+	include modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
+	include modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
+	include modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-world:${project.cca_version}")
 	// lodestone lib
 	include modApi("com.github.Arathain:LodestoneLib-Quilt:${project.lodestone_version}"){ transitive = false }
 
